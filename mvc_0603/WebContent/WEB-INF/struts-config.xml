@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<beans>
+		<bean name="action" class="struts.vo.FullForm"></bean>
+	</beans>
+	<action-mapping>
+		<action name="action" class="struts.action.ActionForm" path="/action">
+			<forward name="success" value="/views/success.jsp"></forward>
+			<forward name="fail" value="/views/fail.jsp"></forward>
+		</action>
+	</action-mapping>
+</struts>
